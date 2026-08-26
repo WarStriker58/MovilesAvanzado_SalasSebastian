@@ -33,4 +33,16 @@ let igvCalculado = montoBase * igv
 let total = montoBase + igvCalculado
 
 //commit
+
 //Mostrar los datos
+print("\nBOLETA DE VENTA")
+print("Producto: \(producto)")
+print("Precio Unitario: S/ \(precio)")
+print("Cantidad: \(cantidad)")
+print("")
+print("Subtotal: S/ \(subtotal)")
+print("Descuento: S/ \(descuento)")
+print("Monto Base: S/ \(montoBase)")
+print("IGV (18%): S/ \(igvCalculado)")
+print("")
+print("TOTAL A PAGAR: S/ \(total)")
