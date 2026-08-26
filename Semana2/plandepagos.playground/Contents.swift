@@ -33,3 +33,12 @@ if mesesPlan == 6 {
 let interesTotal = montoCompra * porcentajeInteres
 let montoFinal = montoCompra + interesTotal
 let cuotaMensual = montoFinal / Double(mesesPlan)
+
+
+//plan de pago parte 1 cabecera
+print("\n=============================================")
+print("                Plan de Pago                 ")
+print("=============================================")
+print("Producto: \(producto) | Interes: S/ \(interesTotal) | CuotaM: S/ \(cuotaMensual)")
+print("Monto Compra: S/ \(montoCompra) | Monto Final: S/ \(montoFinal)")
+print("=============================================\n")
