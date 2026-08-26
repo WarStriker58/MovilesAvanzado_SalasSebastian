@@ -13,3 +13,23 @@ let cantidad = Int(readLine() ?? "0") ?? 0
 let montoCompra = precio * Double(cantidad)
 print("Monto total de compra: S/ \(montoCompra)")
 print("---------------------------------------")
+
+//plan de pagos, porcentajes y calculos
+print("Elija el Plan de Pagos (6, 12, 24): ")
+let mesesPlan = Int(readLine() ?? "0") ?? 0
+
+var porcentajeInteres = 0.0
+
+if mesesPlan == 6 {
+    porcentajeInteres = 0.20
+} else if mesesPlan == 12 {
+    porcentajeInteres = 0.40
+} else if mesesPlan == 24 {
+    porcentajeInteres = 0.60
+} else {
+    print("Plan no valido. Se aplicará 0% de interes por defecto.")
+}
+
+let interesTotal = montoCompra * porcentajeInteres
+let montoFinal = montoCompra + interesTotal
+let cuotaMensual = montoFinal / Double(mesesPlan)
