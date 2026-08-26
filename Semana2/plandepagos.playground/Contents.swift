@@ -42,3 +42,22 @@ print("=============================================")
 print("Producto: \(producto) | Interes: S/ \(interesTotal) | CuotaM: S/ \(cuotaMensual)")
 print("Monto Compra: S/ \(montoCompra) | Monto Final: S/ \(montoFinal)")
 print("=============================================\n")
+
+print("Mes | Monto Inicial | Cuota Mensual | Resta x Pagos")
+print("---------------------------------------------------")
+
+var saldoActual = montoFinal
+
+//plan de pago parte 2 tabla
+if mesesPlan > 0 {
+    for mes in 1...mesesPlan {
+        let montoInicialMes = saldoActual
+        let restaPorPagos = montoInicialMes - cuotaMensual
+        
+        print("\(mes).    \(montoInicialMes)          \(cuotaMensual)           \(restaPorPagos)")
+        
+        saldoActual = restaPorPagos
+    }
+} else {
+    print("No hay meses para generar una tabla de pagos.")
+}
