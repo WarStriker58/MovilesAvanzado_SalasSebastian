@@ -1,5 +1,6 @@
 import Foundation
 
+//variables, calculos y plan de pagos con su validacion
 print("Nombre del producto: ")
 let producto = readLine() ?? ""
 
@@ -30,4 +31,21 @@ if mesesPlan == 6 {
     esPlanValido = true
 } else {
     print("Plan no valido. No se puede proceder.")
+}
+
+//calculos finales para el plan de pagos
+if esPlanValido {
+    
+    let interesTotal = montoCompra * porcentajeInteres
+    let montoFinal = montoCompra + interesTotal
+    let cuotaMensual = montoFinal / Double(mesesPlan)
+    
+    print("En que mes hara un pago adelantado? (0 para ninguno, 1 al \(mesesPlan)): ")
+    let mesAdelantado = Int(readLine() ?? "0") ?? 0
+    
+    var montoAdicional = 0.0
+    if mesAdelantado >= 1 && mesAdelantado <= mesesPlan {
+        print("Monto adicional a pagar ese mes (S/): ")
+        montoAdicional = Double(readLine() ?? "0") ?? 0.0
+    }
 }
