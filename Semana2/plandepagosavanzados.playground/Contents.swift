@@ -48,4 +48,49 @@ if esPlanValido {
         print("Monto adicional a pagar ese mes (S/): ")
         montoAdicional = Double(readLine() ?? "0") ?? 0.0
     }
+
+//plan de pagos impresion
+    //plan de pago parte 1 cabecera
+    print("\n================== PLAN DE PAGO ==================")
+    print("Producto: \(producto) | Interes: S/ \(interesTotal) | CuotaM: S/ \(cuotaMensual)")
+    print("Monto Compra: S/ \(montoCompra) | Monto Final: S/ \(montoFinal)")
+    print("==================================================\n")
+    
+    print("Mes |       Fecha       | Monto Inicial |     Pago     | Resta Por Pagos")
+    print("-----------------------------------------------------------------------")
+    
+    var saldoActual = montoFinal
+    var mesesRealesPagados = 0
+    
+    let calendar = Calendar.current
+    let fechaActual = Date()
+    
+    //plan de pago parte 2 tabla
+    for mes in 1...mesesPlan {
+        if saldoActual <= 0.05 {
+            break
+        }
+        
+        mesesRealesPagados = mesesRealesPagados + 1
+        let montoInicialMes = saldoActual
+        
+        var pagoDelMes = cuotaMensual
+        if mes == mesAdelantado {
+            pagoDelMes = cuotaMensual + montoAdicional
+        }
+        
+        if pagoDelMes > montoInicialMes {
+            pagoDelMes = montoInicialMes
+        }
+        
+        let restaPorPagos = montoInicialMes - pagoDelMes
+        
+        var componentes = DateComponents()
+        componentes.month = mes
+        let fechaFutura = calendar.date(byAdding: componentes, to: fechaActual) ?? fechaActual
+        
+        let formateador = DateFormatter()
+        formateador.dateFormat = "dd/MM/yyyy"
+        let fechaString = formateador.string(from: fechaFutura)
+    }
 }
