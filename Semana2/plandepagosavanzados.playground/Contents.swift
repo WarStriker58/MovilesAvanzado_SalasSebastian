@@ -92,5 +92,19 @@ if esPlanValido {
         let formateador = DateFormatter()
         formateador.dateFormat = "dd/MM/yyyy"
         let fechaString = formateador.string(from: fechaFutura)
+        
+//fin de la tabla y meses pagados
+        var restaString = String(restaPorPagos)
+        if restaPorPagos <= 0.05 {
+            restaString = "—"
+        }
+        
+        print(" \(mes)        \(fechaString)       \(montoInicialMes)         \(pagoDelMes)           \(restaString)")
+        
+        saldoActual = restaPorPagos
     }
+    
+    print("-----------------------------------------------------------------------")
+    print("\n                            MESES PAGADOS \(mesesRealesPagados) DE \(mesesPlan)\n")
+
 }
