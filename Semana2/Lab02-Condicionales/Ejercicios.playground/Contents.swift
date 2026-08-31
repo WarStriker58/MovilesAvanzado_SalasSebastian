@@ -261,3 +261,86 @@ print(texto)
 
 // ¿Para qué sirve _ en vez de i?
 // Sirve para optimizar el rendimiento del código. Le avisa a Swift que no necesitas almacenar el valor del índice actual, ya que el bucle solo se usa para repetir una acción una cantidad específica de veces.
+
+// ===== EJERCICIO 4: WHILE =====
+
+// --- Ejemplo (ya resuelto): ---
+var contador = 5
+while contador > 0 {
+    print("Cuenta regresiva: \(contador)")
+    contador -= 1 // Resta 1 en cada vuelta
+}
+print("¡Despegue!")
+
+// --- TODO 11: Ahorro mensual ---
+// Un alumno ahorra S/. 150 cada mes.
+// ¿Cuántos meses necesita para juntar S/. 2000?
+var ahorro = 0.0
+var meses = 0
+let meta = 2000.0
+let ahorroMensual = 150.0
+
+while ahorro < meta {
+    ahorro += ahorroMensual
+    meses += 1
+}
+print("Necesita \(meses) meses para juntar S/. \(meta)")
+// Necesita 14 meses para juntar S/. 2000.0
+
+// --- TODO 12: División sucesiva ---
+// Divide un número entre 2 repetidamente hasta que sea menor a 1
+var n = 1000.0
+var divisiones = 0
+
+while n >= 1.0 {
+    n = n / 2
+    divisiones += 1
+    print("División \(divisiones): \(n)")
+}
+print("Se dividió \(divisiones) veces")
+// Se dividió 10 veces (el número final queda en 0.9765625)
+
+// --- TODO 13: Validar datos con repeat-while ---
+// Simula pedir una nota hasta que sea válida (entre 0 y 20)
+// Usamos valores fijos porque no podemos pedir input en Playground
+
+let intento1 = 25 // Inválido: > 20
+let intento2 = -3 // Inválido: < 0
+let intento3 = 15 // Válido
+
+var intentoActual = intento1
+var esValido = false
+var numIntento = 1
+
+repeat {
+    // TODO: Verifica si intentoActual está entre 0 y 20
+    if intentoActual >= 0 && intentoActual <= 20 {
+        esValido = true
+        print("Nota \(intentoActual) válida en intento \(numIntento)")
+    } else {
+        print("Nota \(intentoActual) inválida, intento \(numIntento)")
+        // Simula el siguiente intento:
+        if numIntento == 1 { intentoActual = intento2 }
+        if numIntento == 2 { intentoActual = intento3 }
+        numIntento += 1
+    }
+} while !esValido
+
+// PREDICT: ¿Cuántas veces se ejecuta cada bucle?
+
+var a = 100
+while a > 1 {
+    a = a / 3
+}
+print(a)
+// PREDICT 8: ¿Valor final? 1 | ¿Cuántas vueltas? 4
+
+var b = 0
+repeat {
+    b += 1
+} while b < 0
+print(b)
+// PREDICT 9: ¿Valor? 1
+
+// ¿Por qué repeat-while ejecuta al menos una vez?
+// Porque evalúa la condición al final del ciclo. Esto garantiza que las instrucciones dentro del bloque se ejecuten obligatoriamente una primera vez antes de que se compruebe si se cumple el criterio de repetición.
