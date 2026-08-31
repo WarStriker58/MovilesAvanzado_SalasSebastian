@@ -186,3 +186,78 @@ case "a", "e", "i", "o", "u": print("Vocal")
 default: print("Consonante")
 }
 // PREDICT 5: Imprime "Vocal"
+
+// ===== EJERCICIO 3: FOR-IN =====
+
+// --- Ejemplo (ya resuelto): ---
+// Imprime los números del 1 al 5:
+for i in 1...5 {
+    print("Número: \(i)")
+}
+
+// --- TODO 7: Tabla de multiplicar del 7 ---
+for i in 1...12 {
+    print("7 x \(i) = \(7 * i)")
+}
+
+// --- TODO 8: Sumatoria del 1 al 100 ---
+var suma = 0
+for i in 1...100 {
+    suma = suma + i
+}
+print("La suma del 1 al 100 es: \(suma)")
+
+// --- TODO 9: Calcular el factorial de 8 ---
+var factorial = 1
+for i in 1...8 {
+    factorial = factorial * i
+}
+print("8! = \(factorial)")
+
+// --- TODO 10: Patrón de asteriscos ---
+for i in 1...5 {
+    var fila = ""
+    for _ in 1...i {
+        fila += "*"
+    }
+    print(fila)
+}
+
+// ===== FIX: Encuentra los 2 errores =====
+
+// --- Bloque 1: Números pares ---
+// Se quiere imprimir los números pares del 2 al 20:
+for i in 1...20 {
+    // FIX 4 CORREGIDO: Se cambió '== 1' (impares) por '== 0' (pares)
+    // Imprime pares
+    if i % 2 == 0 {
+        print(i)
+    }
+}
+
+// --- Bloque 2: Cuenta regresiva ---
+// Se quiere contar del 10 al 1 (cuenta regresiva):
+// FIX 5 CORREGIDO: Usamos stride para ir desde 10 hasta 1, bajando de -1 en -1
+// Cuenta hacia atras
+for i in stride(from: 10, through: 1, by: -1) {
+    print(i)
+}
+
+// PREDICT: ¿Cuántas veces se ejecuta y qué imprime al final?
+
+var total = 0
+for i in 1...5 {
+    total += i
+}
+print(total)
+// PREDICT 6: ¿Valor? 15 | ¿Cuántas iteraciones? 5
+
+var texto = ""
+for _ in 1...3 {
+    texto += "Hola "
+}
+print(texto)
+// PREDICT 7: Imprime "Hola Hola Hola "
+
+// ¿Para qué sirve _ en vez de i?
+// Sirve para optimizar el rendimiento del código. Le avisa a Swift que no necesitas almacenar el valor del índice actual, ya que el bucle solo se usa para repetir una acción una cantidad específica de veces.
