@@ -105,8 +105,6 @@ if precio1 < 0 || precio2 < 0 || precio3 < 0 || precio4 < 0 || precio5 < 0 ||
     print("¡Gracias por su compra!")
 }
 
-import UIKit
-
 // ===== EJERCICIO 7: JUEGO DE ADIVINANZA =====
 
 // --- Requisito 17: Configuración del Valor Objetivo ---
