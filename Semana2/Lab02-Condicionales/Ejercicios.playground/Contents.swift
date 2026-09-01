@@ -104,3 +104,74 @@ if precio1 < 0 || precio2 < 0 || precio3 < 0 || precio4 < 0 || precio5 < 0 ||
     print("Puntos Ganados en esta compra: \(puntosGanados) pts")
     print("¡Gracias por su compra!")
 }
+
+import UIKit
+
+// ===== EJERCICIO 7: JUEGO DE ADIVINANZA =====
+
+// --- Requisito 17: Configuración del Valor Objetivo ---
+// Define la constante numérica invariable que el usuario debe descubrir para ganar el juego
+let numeroSecreto = 42
+
+// --- Requisito 18: Inicialización de Intentos del Jugador ---
+// Define la primera aproximación numérica guardada en una variable independiente
+let intento1 = 20
+// Define la segunda aproximación numérica guardada en una variable independiente
+let intento2 = 50
+// Define la tercera aproximación numérica guardada en una variable independiente
+let intento3 = 45
+// Define la cuarta aproximación numérica guardada en una variable independiente
+let intento4 = 42
+// Define la quinta aproximación numérica guardada en una variable independiente
+let intento5 = 12
+
+// --- Preparación de Estructura de Control para el Bucle ---
+// Agrupa las cinco variables de intentos dentro de un arreglo ordenado para su procesamiento secuencial
+let listaIntentos = [intento1, intento2, intento3, intento4, intento5]
+// Declara un índice mutable en cero para controlar la posición física dentro del arreglo durante las iteraciones
+var indice = 0
+// Declara una variable booleana en falso que actuará como bandera cuando el usuario acierte el número
+var haAdivinado = false
+// --- Requisito 21: Contador de Intentos ---
+// Registra de forma acumulativa la cantidad de oportunidades numéricas que han sido evaluadas en el sistema
+var intentosUtilizados = 0
+
+// --- Requisito 19: Implementación de Ciclo Iterativo ---
+// Ejecuta el bloque interno de forma repetitiva mientras el índice no supere el tamaño del arreglo y no se haya ganado
+while indice < listaIntentos.count && haAdivinado == false {
+    // Extrae el valor numérico del intento actual basándose en la posición del puntero del índice
+    let intentoActual = listaIntentos[indice]
+    // Incrementa en una unidad el contador de oportunidades procesadas por el motor del juego
+    intentosUtilizados += 1
+    
+    // --- Requisito 20: Lógica de Comparación y Retroalimentación ---
+    // Evalúa matemáticamente si el número propuesto por el usuario es exactamente igual al valor secreto fijado
+    if intentoActual == numeroSecreto {
+        // Muestra en la terminal el mensaje de victoria felicitando al usuario por lograr la coincidencia exacta
+        print("Intento \(intentosUtilizados) (\(intentoActual)): ¡Correcto!")
+        // Cambia la bandera de control a verdadero para forzar la finalización inmediata de las iteraciones del bucle
+        haAdivinado = true
+    // Evalúa si la propuesta del jugador es matemáticamente superior al valor objetivo que se busca descubrir
+    } else if intentoActual > numeroSecreto {
+        // Notifica de forma escrita al usuario que su número ingresado está por encima del objetivo real
+        print("Intento \(intentosUtilizados) (\(intentoActual)): Muy alto")
+    // Bloque por descarte que se ejecuta únicamente si el número no fue igual ni mayor al objetivo secreto
+    } else {
+        // Notifica de forma escrita al usuario que su número ingresado está por debajo del objetivo real
+        print("Intento \(intentosUtilizados) (\(intentoActual)): Muy bajo")
+    }
+    
+    // Incrementa en uno el puntero del índice para avanzar a la siguiente posición del arreglo de intentos
+    indice += 1
+}
+
+// --- Requisito 22: Evaluación de Condición de Cierre (Pérdida) ---
+// Comprueba si el bucle terminó y la bandera de acierto continúa teniendo un estado de falso absoluto
+if haAdivinado == false {
+    // Imprime en la consola el texto de derrota revelando finalmente cuál era el número misterioso del juego
+    print("Perdiste. El número era: \(numeroSecreto)")
+// Bloque alternativo ejecutado en caso de que el jugador haya conseguido el éxito dentro de los límites
+} else {
+    // Muestra en la pantalla de Xcode un resumen estadístico informando la cantidad total de turnos que le tomó ganar
+    print("¡Felicidades! Lograste resolver el misterio en \(intentosUtilizados) intentos.")
+}
