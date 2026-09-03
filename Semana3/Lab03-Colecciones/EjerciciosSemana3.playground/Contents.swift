@@ -104,3 +104,56 @@ for (nombre, edad) in edades {
 }
 // Imprime el resultado en pantalla: Mayores de 21: ["Luis"]
 print("Mayores de 21: \(mayores)")
+
+// ===== TODO 10: Inventario de productos =====
+// Pide N productos con nombre, precio y stock
+// Calcula valor total y muestra stock bajo
+var precios: [String: Double] = [:]
+var stocks: [String: Int] = [:]
+
+print("¿Cuántos productos?")
+let n = Int(readLine() ?? "") ?? 0
+
+// Evita que el programa falle si el usuario ingresa 0 o un número negativo
+if n > 0 {
+    for i in 1...n {
+        print("\nProducto \(i) - Nombre:")
+        let nombre = (readLine() ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        print("Precio:")
+        let precio = Double(readLine() ?? "") ?? 0.0
+        
+        print("Stock:")
+        let stock = Int(readLine() ?? "") ?? 0
+        
+        precios[nombre] = precio
+        stocks[nombre] = stock
+    }
+}
+
+// ===== TODO: Calcular valor total (precio × stock) =====
+var valorTotalInventario = 0.0
+for (nombre, precio) in precios {
+    // Buscamos el stock correspondiente usando la clave del producto
+    let stockProducto = stocks[nombre] ?? 0
+    valorTotalInventario += precio * Double(stockProducto)
+}
+
+print("\n================ REPORTE ================")
+print("Valor total del inventario: $\(String(format: "%.2f", valorTotalInventario))")
+
+// ===== TODO: Mostrar productos con stock < 5 =====
+print("\n--- Alerta de Stock Bajo (Menos de 5 unidades) ---")
+var hayStockBajo = false
+
+for (nombre, stock) in stocks {
+    if stock < 5 {
+        print("\(nombre): \(stock) unidades restantes.")
+        hayStockBajo = true
+    }
+}
+
+if !hayStockBajo {
+    print("Todos los productos tienen buen nivel de stock.")
+}
+print("=========================================")
