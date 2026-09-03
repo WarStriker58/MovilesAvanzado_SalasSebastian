@@ -157,3 +157,94 @@ if !hayStockBajo {
     print("Todos los productos tienen buen nivel de stock.")
 }
 print("=========================================")
+
+
+
+// ===== CARRITO DE COMPRAS 2.0 =====
+var nombres: [String] = []
+var precios: [Double] = []
+var cantidades: [Int] = []
+
+// TODO 11: Pedir productos
+print("¿Cuántos productos va a comprar?")
+let totalProductos = Int(readLine() ?? "") ?? 0
+for i in 1...totalProductos {
+    print("\nProducto \(i) - Nombre:")
+    nombres.append(readLine() ?? "")
+    print("Precio unitario:")
+    precios.append(Double(readLine() ?? "") ?? 0)
+    print("Cantidad:")
+    cantidades.append(Int(readLine() ?? "") ?? 0)
+}
+
+// TODO 12: Calcular subtotales
+var subtotales: [Double] = []
+for i in 0..<nombres.count {
+    let sub = precios[i] * Double(cantidades[i])
+    subtotales.append(sub)
+}
+
+// TODO 13: Total del carrito
+var totalCarrito = 0.0
+for sub in subtotales {
+    totalCarrito += sub
+}
+
+// TODO 14: Nombre del cliente
+print("\nNombre del cliente:")
+let cliente = readLine() ?? ""
+
+// TODO 15: Descuento
+var descPct = 0.0
+if totalCarrito >= 5000 { descPct = 0.15 }
+else if totalCarrito >= 2000 { descPct = 0.10 }
+else if totalCarrito >= 500 { descPct = 0.05 }
+
+let descuento = totalCarrito * descPct
+let totalConDesc = totalCarrito - descuento
+
+// TODO 16: IGV y total
+let igv = totalConDesc * 0.18
+let totalFinal = totalConDesc + igv
+
+// TODO 17: Categoría
+var categoria = ""
+switch Int(totalCarrito) {
+case 0..<500: categoria = "Regular"
+case 500..<2000: categoria = "Frecuente"
+case 2000..<5000: categoria = "VIP"
+default: categoria = "Premium"
+}
+
+// TODO 18: Ticket
+let sep = String(repeating: "=", count: 45)
+
+// Ajustamos los prints para eliminar los espacios en blanco iniciales
+print(sep)
+print("TICKET DE COMPRA 2.0")
+print("Cliente: \(cliente) (\(categoria))")
+print(sep)
+
+for i in 0..<nombres.count {
+    // Formateamos los subtotales a un decimal si terminan en .0
+    let subStr = subtotales[i] == Double(Int(subtotales[i])) ? String(format: "%.1f", subtotales[i]) : String(subtotales[i])
+    print("\(nombres[i]) x\(cantidades[i]) S/. \(subStr)")
+}
+
+print(sep)
+
+// Formateamos el subtotal general a un decimal si corresponde
+let totalCarritoStr = totalCarrito == Double(Int(totalCarrito)) ? String(format: "%.1f", totalCarrito) : String(totalCarrito)
+print("Subtotal: S/. \(totalCarritoStr)")
+
+if descPct > 0 {
+    let descPctStr = String(format: "%.1f", descPct * 100)
+    let descStr = String(format: "%.1f", descuento)
+    print("Descuento (\(descPctStr)%): -S/. \(descStr)")
+}
+
+// Forzamos el IGV y el TOTAL final a dos decimales exactos
+print("IGV (18%): S/. \(String(format: "%.2f", igv))")
+print(sep)
+print("TOTAL: S/. \(String(format: "%.2f", totalFinal))")
+print(sep)
