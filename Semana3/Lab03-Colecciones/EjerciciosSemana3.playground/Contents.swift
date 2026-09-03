@@ -59,3 +59,48 @@ print(lista.count)   // Resultado: 5
 var nombres = ["Ana", "Carlos", "Beto"]
 print(nombres.sorted()) // Resultado: ["Ana", "Beto", "Carlos"]
 print(nombres)          // Resultado: ["Ana", "Carlos", "Beto"]
+
+// ===== TODO 4: Catálogo de productos =====
+var productos: [String: Double] = [:]
+for i in 1...4 {
+    print("Producto \(i) - Nombre:")
+    let nombre = (readLine() ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+    
+    // Si el nombre está vacío, le asignamos uno por defecto para evitar errores
+    let nombreValido = nombre.isEmpty ? "Producto \(i)" : nombre
+    
+    print("Precio:")
+    let precio = Double(readLine() ?? "") ?? 0.0
+    
+    productos[nombreValido] = precio
+}
+// ===== TODO 5: Mostrar catálogo =====
+print("\n===== CATÁLOGO =====")
+// Nota: Saldrán en orden aleatorio, es el comportamiento normal de un diccionario
+for (nombre, precio) in productos {
+    print("• \(nombre): S/. \(String(format: "%.2f", precio))")
+}
+// ===== TODO 6: Valor total =====
+// Optimizamos usando .values y .reduce para sumar todo directamente
+let valorTotal = productos.values.reduce(0, +)
+print("\nValor total del catálogo: S/. \(String(format: "%.2f", valorTotal))\n")
+// ===== TODO 7: Buscar producto =====
+print("Ingrese el producto a buscar:")
+let buscarProd = (readLine() ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+if let precioEncontrado = productos[buscarProd] {
+    print("-> \(buscarProd) cuesta S/. \(String(format: "%.2f", precioEncontrado))")
+} else {
+    print("-> El producto '\(buscarProd)' no fue encontrado.")
+}
+// Diccionario inicial con nombres y edades
+var edades: [String: Int] = ["Ana": 20, "Luis": 22, "María": 19]
+// Lista vacía para guardar a los que cumplan la condición
+var mayores: [String] = []
+// Recorremos el diccionario revisando cada nombre y edad
+for (nombre, edad) in edades {
+    if edad >= 21 {
+        mayores.append(nombre) // Si tiene 21 o más, guardamos su nombre
+    }
+}
+// Imprime el resultado en pantalla: Mayores de 21: ["Luis"]
+print("Mayores de 21: \(mayores)")
