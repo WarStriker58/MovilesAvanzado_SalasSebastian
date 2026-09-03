@@ -96,3 +96,119 @@ if !registroAlumnos.isEmpty { // Verifica que existan datos registrados para pre
     print("No se registraron datos para calcular estadísticas.") // Advierte en la terminal la ausencia de registros de alumnos
 } // Cierra la llave de validación de seguridad de cálculo estadístico
 print("=============================================") // Imprime la línea de cierre final que concluye el ticket del ejercicio
+
+
+
+// ===== EJERCICIO 7: INVENTARIO CON MENÚ =====
+// Diccionarios globales para almacenar los datos
+var inventarioPrecios: [String: Double] = [:]
+var inventarioStocks: [String: Int] = [:]
+
+// Registro inicial de productos
+print("¿Cuántos productos desea registrar?")
+let totalProductos = Int(readLine() ?? "") ?? 0
+
+if totalProductos > 0 {
+    for i in 1...totalProductos {
+        print("\nProducto \(i) - Nombre:")
+        let nombre = (readLine() ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        print("Precio unitario:")
+        let precio = Double(readLine() ?? "") ?? 0.0
+        
+        print("Stock inicial:")
+        let stock = Int(readLine() ?? "") ?? 0
+        
+        // Guardar datos usando el nombre como clave
+        inventarioPrecios[nombre] = precio
+        inventarioStocks[nombre] = stock
+    }
+}
+
+// Bucle interactivo del menú principal
+var ejecutarMenu = true
+while ejecutarMenu {
+    print("\n=============================================")
+    print("             MENÚ DE INVENTARIO              ")
+    print("=============================================")
+    print("1) Ver inventario completo")
+    print("2) Buscar producto por nombre")
+    print("3) Alerta de Stock Bajo (< 5 unidades)")
+    print("4) Calcular Valor Total del Inventario")
+    print("5) Salir del programa")
+    print("=============================================")
+    print("Seleccione una opción (1-5):")
+    
+    let opcionStr = readLine() ?? ""
+    print("") // Salto de línea estético
+    
+    switch opcionStr {
+    case "1":
+        // Opción 1: Reporte formateado en columnas estables
+        print("============== INVENTARIO ACTUAL ==============")
+        if inventarioPrecios.isEmpty {
+            print("El inventario se encuentra vacío.")
+        } else {
+            // Formateo de columnas: 20 caracteres para nombre, 12 para precio
+            print(String(format: "%-20@ | %-12@ | %-8@", "Producto", "Precio", "Stock"))
+            print("-----------------------------------------------")
+            for (nombre, precio) in inventarioPrecios {
+                let stock = inventarioStocks[nombre] ?? 0
+                let precioStr = String(format: "S/. %.2f", precio)
+                print(String(format: "%-20@ | %-12@ | %-8d", nombre, precioStr, stock))
+            }
+        }
+        print("===============================================")
+        
+    case "2":
+        // Opción 2: Buscar producto por clave exacta
+        print("Ingrese el nombre del producto a buscar:")
+        let buscarNombre = (readLine() ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if let precio = inventarioPrecios[buscarNombre] {
+            let stock = inventarioStocks[buscarNombre] ?? 0
+            print("\n🔍 ¡Producto encontrado!")
+            print("- Nombre: \(buscarNombre)")
+            print("- Precio: S/. \(String(format: "%.2f", precio))")
+            print("- Stock : \(stock) unidades")
+        } else {
+            print("❌ El producto '\(buscarNombre)' no está registrado.")
+        }
+        
+    case "3":
+        // Opción 3: Filtrar productos con existencias críticas
+        print("=========== ALERTA DE STOCK BAJO ===========")
+        var contadorBajo = 0
+        for (nombre, stock) in inventarioStocks {
+            if stock < 5 {
+                let precio = inventarioPrecios[nombre] ?? 0.0
+                print("⚠️ \(nombre) -> Quedan \(stock) u. (S/. \(String(format: "%.2f", precio)))")
+                contadorBajo += 1
+            }
+        }
+        if contadorBajo == 0 {
+            print("✅ Todo en orden. No hay productos con stock menor a 5.")
+        }
+        print("============================================")
+        
+    case "4":
+        // Opción 4: Sumatoria financiera (Precio * Stock)
+        print("========= VALOR TOTAL DE ACTIVOS =========")
+        var valorTotalAlmacen = 0.0
+        for (nombre, precio) in inventarioPrecios {
+            let stock = inventarioStocks[nombre] ?? 0
+            valorTotalAlmacen += precio * Double(stock)
+        }
+        print("Valor monetario total: S/. \(String(format: "%.2f", valorTotalAlmacen))")
+        print("==========================================")
+        
+    case "5":
+        // Opción 5: Romper la condición del bucle while
+        print("Saliendo del sistema de gestión... ¡Hasta luego!")
+        ejecutarMenu = false
+        
+    default:
+        // Manejo de opciones erróneas de teclado
+        print("❌ Opción inválida. Digite un número válido del 1 al 5.")
+    }
+}
