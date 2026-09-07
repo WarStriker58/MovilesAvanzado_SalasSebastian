@@ -122,7 +122,17 @@ let lineas: [String: [String]] = [
         "Mercado Santa Anita"
     ],
     
-    "Linea 5": [],
+    "Linea 5": [
+        "Benavides",
+        "Saenz Pena",
+        "Alejandro Iglesias",
+        "Matellini",
+        "Condores",
+        "Unidad de Peaje de Villa",
+        "Circuito de Conchan",
+        "MUNA"
+    ],
+    
     "Linea 6": []
 ]
 
