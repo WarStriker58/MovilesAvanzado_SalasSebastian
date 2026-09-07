@@ -90,7 +90,38 @@ let lineas: [String: [String]] = [
         "Los Heroes",
         "Pedro Miotta"
     ],
-    "Linea 4": [],
+    
+    "Linea 4": [
+        "Gambetta",
+        "Canta Callao",
+        "Bocanegra",
+        "Aeropuerto",
+        "El Olivar",
+        "Quilca",
+        "Morales Duarez",
+        "Carmen de la Legua",
+        "Venezuela",
+        "Rafael Escardo",
+        "Pando",
+        "Jose de Sucre",
+        "Brasil",
+        "Felipe Salaverry",
+        "Guillermo Prescott",
+        "Las Palmeras",
+        "Conde de San Isidro",
+        "Rivera Navarrete",
+        "Pablo Carriquiry",
+        "La Cultura",
+        "San Luis",
+        "Monterrico",
+        "Manuel Olguin",
+        "Los Frutales",
+        "La Molina",
+        "Santa Patricia",
+        "Mayorazgo",
+        "Mercado Santa Anita"
+    ],
+    
     "Linea 5": [],
     "Linea 6": []
 ]
