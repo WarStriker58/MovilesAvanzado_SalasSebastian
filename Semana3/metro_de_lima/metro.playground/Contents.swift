@@ -1,6 +1,35 @@
 // Datos de las líneas
 let lineas: [String: [String]] = [
-    "Linea 1": [],
+    
+    "Linea 1": [
+        "Villa El Salvador",
+        "Parque Industrial",
+        "Pumacahua",
+        "Villa Maria",
+        "Maria Auxiliadora",
+        "San Juan",
+        "Atocongo",
+        "Jorge Chavez",
+        "Ayacucho",
+        "Cabitos",
+        "Angamos",
+        "San Borja Sur",
+        "La Cultura",
+        "Arriola",
+        "Gamarra",
+        "Miguel Grau",
+        "El Angel",
+        "Presbitero Maestro",
+        "Caja de Agua",
+        "Piramide del Sol",
+        "Los Jardines",
+        "Los Postes",
+        "San Carlos",
+        "San Martin",
+        "Santa Rosa",
+        "Bayovar"
+    ],
+    
     "Linea 2": [],
     "Linea 3": [],
     "Linea 4": [],
