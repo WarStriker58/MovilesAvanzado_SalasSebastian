@@ -133,7 +133,26 @@ let lineas: [String: [String]] = [
         "MUNA"
     ],
     
-    "Linea 6": []
+    "Linea 6": [
+        "Naranjal",
+        "Los Alisos",
+        "Carlos Izaguirre",
+        "Universitaria",
+        "Tomas Valle",
+        "Jose Granda",
+        "Bertolotto",
+        "San Miguel",
+        "Magdalena",
+        "Ejercito",
+        "San Isidro",
+        "Angamos",
+        "Republica de Panama",
+        "Primavera",
+        "Caminos del Inca",
+        "La Encalada",
+        "Monterrico",
+        "La Molina"
+    ]
 ]
 
 // FUNCIONES
