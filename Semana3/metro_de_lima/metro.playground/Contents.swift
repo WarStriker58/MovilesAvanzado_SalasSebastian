@@ -196,18 +196,36 @@ func consultarEstacion() {
     
     if let nombreEstacion = readLine() {
         
-        var encontrada = false
+        var lineasEncontradas: [String] = []
         
         for (linea, estaciones) in lineas {
             
             if estaciones.contains(nombreEstacion) {
-                print("\nLa estacion \(nombreEstacion) pertenece a \(linea).")
-                encontrada = true
+                lineasEncontradas.append(linea)
             }
         }
         
-        if !encontrada {
-            print("\nLa estacion no fue encontrada.")
+        print("\n========================================")
+        print("       INFORMACION DE ESTACION")
+        print("========================================")
+        
+        if lineasEncontradas.isEmpty {
+            print("La estacion no fue encontrada.")
+        } else {
+            print("\nEstacion: \(nombreEstacion)")
+            print("\nPertenece a las siguientes lineas:")
+            
+            for linea in lineasEncontradas {
+                print("- \(linea)")
+            }
+            
+            if lineasEncontradas.count > 1 {
+                print("\nEsta estacion permite conexion entre:")
+                
+                for indice in 0..<(lineasEncontradas.count - 1) {
+                    print("\(lineasEncontradas[indice]) <-> \(lineasEncontradas[indice + 1])")
+                }
+            }
         }
     }
 }
@@ -245,7 +263,39 @@ func mostrarConexiones() {
     print("       ESTACIONES DE CONEXION")
     print("========================================")
     
-    print("Funcion en desarrollo.")
+    var estacionesConexion: [String: [String]] = [:]
+    
+    for (linea, estaciones) in lineas {
+        
+        for estacion in estaciones {
+            
+            if estacionesConexion[estacion] == nil {
+                estacionesConexion[estacion] = []
+            }
+            
+            estacionesConexion[estacion]?.append(linea)
+        }
+    }
+    
+    var encontrada = false
+    
+    for (estacion, lineasEstacion) in estacionesConexion {
+        
+        if lineasEstacion.count > 1 {
+            
+            print("\nEstacion: \(estacion)")
+            
+            for linea in lineasEstacion {
+                print("- \(linea)")
+            }
+            
+            encontrada = true
+        }
+    }
+    
+    if !encontrada {
+        print("\nNo se encontraron estaciones de conexion.")
+    }
 }
 
 func contarEstaciones() {
