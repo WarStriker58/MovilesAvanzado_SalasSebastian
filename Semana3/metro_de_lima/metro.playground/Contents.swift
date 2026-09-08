@@ -120,38 +120,6 @@ let lineas: [String: [String]] = [
         "Santa Patricia",
         "Mayorazgo",
         "Mercado Santa Anita"
-    ],
-    
-    "Linea 5": [
-        "Benavides",
-        "Saenz Pena",
-        "Alejandro Iglesias",
-        "Matellini",
-        "Condores",
-        "Unidad de Peaje de Villa",
-        "Circuito de Conchan",
-        "MUNA"
-    ],
-    
-    "Linea 6": [
-        "Naranjal",
-        "Los Alisos",
-        "Carlos Izaguirre",
-        "Universitaria",
-        "Tomas Valle",
-        "Jose Granda",
-        "Bertolotto",
-        "San Miguel",
-        "Magdalena",
-        "Ejercito",
-        "San Isidro",
-        "Angamos",
-        "Republica de Panama",
-        "Primavera",
-        "Caminos del Inca",
-        "La Encalada",
-        "Monterrico",
-        "La Molina"
     ]
 ]
 
