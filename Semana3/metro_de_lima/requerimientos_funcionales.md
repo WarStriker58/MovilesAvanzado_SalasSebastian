@@ -1,10 +1,29 @@
 # Metro de Lima - Programa Terminal
 
-## Descripción
+## Descripción del proyecto
 
-Proyecto desarrollado en Swift que permite realizar consultas sobre las líneas, estaciones y conexiones del Metro de Lima y Callao mediante un programa de terminal.
+El proyecto consiste en desarrollar un programa de terminal utilizando el lenguaje Swift, orientado a la consulta de información sobre las líneas y estaciones del Metro de Lima y Callao.
 
-El sistema trabaja con las Líneas 1, 2, 3 y 4.
+El sistema permite al usuario consultar las estaciones de una línea, buscar estaciones por nombre, conocer a qué líneas pertenece una estación e identificar las estaciones que permiten realizar conexiones entre líneas.
+
+El programa trabaja con información registrada de las Líneas 1, 2, 3 y 4.
+
+## Objetivo
+
+Desarrollar un sistema sencillo e interactivo que permita realizar consultas sobre las líneas y estaciones del Metro de Lima y Callao mediante un menú en la terminal.
+
+## Alcance
+
+El sistema permitirá:
+
+- Consultar las estaciones de una línea.
+- Consultar información de una estación.
+- Identificar las líneas a las que pertenece una estación.
+- Identificar estaciones de conexión entre líneas.
+- Buscar estaciones mediante coincidencias parciales.
+- Consultar la cantidad de estaciones de una línea.
+- Mostrar las líneas disponibles.
+- Informar cuando una línea o estación no se encuentre registrada.
 
 ## Requerimientos Funcionales
 
