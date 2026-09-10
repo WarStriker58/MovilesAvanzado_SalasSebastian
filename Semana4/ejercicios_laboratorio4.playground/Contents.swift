@@ -148,3 +148,20 @@ let monto = 2000.0 * (1 - misteriosa.descuento()) // monto = 2000 * 0.9 = 1800.0
 
 print(misteriosa.costoEnvio(monto: monto))
 // Imprime: 0.0
+
+// ===== CASO 2 — PARTE A: BIBLIOTECA (SIN IA) =====
+// Docente: Juan León
+// TODO 19: escribe aquí el enum, el struct, la clase y la simulación
+
+import Foundation
+
+enum EstadoLibro {
+    case disponible
+    case prestado
+}
+
+struct Libro {
+    let titulo: String
+    let autor: String
+    var estado: EstadoLibro = .disponible
+}
