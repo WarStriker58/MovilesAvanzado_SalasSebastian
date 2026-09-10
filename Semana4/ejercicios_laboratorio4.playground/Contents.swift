@@ -173,6 +173,7 @@ class Biblioteca {
         libros.append(libro)
     }
     
+    // @discardableResult le dice al compilador que es normal no guardar el Bool devuelto
     @discardableResult
     func prestar(titulo: String) -> Bool {
         for i in 0..<libros.count {
@@ -221,3 +222,18 @@ class Biblioteca {
         }
     }
 }
+
+// Simulación pura y directa sin asignaciones basura (_ =)
+let miBiblioteca = Biblioteca()
+
+miBiblioteca.agregar(libro: Libro(titulo: "Cien años de soledad", autor: "Gabriel García Márquez"))
+miBiblioteca.agregar(libro: Libro(titulo: "La ciudad y los perros", autor: "Mario Vargas Llosa"))
+miBiblioteca.agregar(libro: Libro(titulo: "El Quijote", autor: "Miguel de Cervantes"))
+
+miBiblioteca.prestar(titulo: "La ciudad y los perros")
+miBiblioteca.prestar(titulo: "La ciudad y los perros")
+miBiblioteca.devolver(titulo: "La ciudad y los perros")
+miBiblioteca.prestar(titulo: "El Quijote")
+miBiblioteca.prestar(titulo: "El Principito")
+
+miBiblioteca.inventario()
