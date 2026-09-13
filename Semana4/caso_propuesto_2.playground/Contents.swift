@@ -24,3 +24,22 @@ class Cliente {
         print("💰 Monto mínimo de apertura: S/ \(montoMinimoApertura)")
     }
 }
+
+// agregar cliente natural
+class ClienteNatural: Cliente {
+    var nombreCompleto: String
+    var dni: String
+    
+    init(codigo: String, direccion: String, fechaDeRegistro: String, numeroCuenta: String, montoMinimoApertura: Double, nombreCompleto: String, dni: String) {
+        self.nombreCompleto = nombreCompleto
+        self.dni = dni
+        super.init(codigo: codigo, direccion: direccion, fechaDeRegistro: fechaDeRegistro, numeroCuenta: numeroCuenta, montoMinimoApertura: montoMinimoApertura)
+    }
+    
+    override func mostrarDatos() {
+        print("👤 Cliente Natural:")
+        print("Nombre: \(nombreCompleto)")
+        print("DNI: \(dni)")
+        super.mostrarDatos()
+    }
+}
