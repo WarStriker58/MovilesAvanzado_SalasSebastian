@@ -177,3 +177,22 @@ while continuar {
         continuar = false
     }
 }
+
+// reporte final
+print("\n=======================================")
+print("          REPORTE DE CLIENTES          ")
+print("=======================================")
+
+var i = 0
+while i < listaClientes.count {
+    let clienteActual = listaClientes[i]
+    clienteActual.mostrarDatos()
+    
+    if i < listaClientes.count - 1 {
+        print("---------------------------------------")
+    }
+    
+    i = i + 1
+}
+
+print("=======================================")
