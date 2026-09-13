@@ -63,3 +63,17 @@ while contador <= cantidadCursosDiferentes {
 // operaciones matematicas generales
 let igv = subtotal * 0.18
 let totalConIgv = subtotal + igv
+
+// logica de descuentos condicionales
+var descuentoCantidad = 0.0
+var descuentoTecsup = 0.0
+
+if totalCursosComprados >= 3 {
+    descuentoCantidad = totalConIgv * 0.10
+    
+    if esAlumnoTecsup == true {
+        descuentoTecsup = 400.0
+    }
+}
+
+let totalFinal = totalConIgv - descuentoCantidad - descuentoTecsup
