@@ -77,3 +77,29 @@ if totalCursosComprados >= 3 {
 }
 
 let totalFinal = totalConIgv - descuentoCantidad - descuentoTecsup
+
+// impresion estetica de la factura final
+print("\n----------------------------------------------")
+print("🎓 FACTURA DE CURSOS")
+print("Estudiante: " + estudiante)
+print("DNI: " + dni)
+print("Alumno de Tecsup: " + textoAlumnoTecsup)
+print("----------------------------------------------")
+
+print(listaDeCursosImpresion, terminator: "")
+
+print("----------------------------------------------")
+print("Subtotal: S/ \(subtotal)")
+print("IGV (18%): S/ \(igv)")
+print("Total con IGV: S/ \(totalConIgv)")
+
+if descuentoCantidad > 0 {
+    print("Descuento 10% por cantidad: -S/ \(descuentoCantidad) ✅")
+}
+if descuentoTecsup > 0 {
+    print("Descuento especial Tecsup: -S/ \(descuentoTecsup) ✅")
+}
+
+print("----------------------------------------------")
+print("💰 TOTAL FINAL A PAGAR: S/ \(totalFinal)")
+print("----------------------------------------------")
