@@ -59,3 +59,7 @@ while contador <= cantidadCursosDiferentes {
     
     contador = contador + 1
 }
+
+// operaciones matematicas generales
+let igv = subtotal * 0.18
+let totalConIgv = subtotal + igv
