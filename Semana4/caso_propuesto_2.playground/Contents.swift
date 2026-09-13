@@ -65,3 +65,115 @@ class ClienteJuridico: Cliente {
         super.mostrarDatos()
     }
 }
+
+// registro y validacion de clientes
+var listaClientes: [Cliente] = []
+var continuar = true
+
+print("=== SISTEMA DE REGISTRO DE CLIENTES ===")
+
+while continuar {
+    
+    var opcion = ""
+    while opcion != "1" && opcion != "2" {
+        print("\n¿Qué tipo de cliente desea registrar?")
+        print("1. Cliente Natural")
+        print("2. Cliente Jurídico")
+        print("Seleccione una opción (1 o 2): ", terminator: "")
+        opcion = readLine() ?? ""
+        if opcion != "1" && opcion != "2" {
+            print("❌ Opción inválida. Ingrese 1 o 2.")
+        }
+    }
+    
+    var codigo = ""
+    while codigo == "" {
+        print("Ingrese Código: ", terminator: "")
+        codigo = readLine() ?? ""
+        if codigo == "" { print("⚠️ El código no puede estar vacío.") }
+    }
+    
+    var direccion = ""
+    while direccion == "" {
+        print("Ingrese Dirección: ", terminator: "")
+        direccion = readLine() ?? ""
+        if direccion == "" { print("⚠️ La dirección no puede estar vacía.") }
+    }
+    
+    var fecha = ""
+    while fecha == "" {
+        print("Ingrese Fecha de registro (AAAA-MM-DD): ", terminator: "")
+        fecha = readLine() ?? ""
+        if fecha == "" { print("⚠️ La fecha no puede estar vacía.") }
+    }
+    
+    var cuenta = ""
+    while cuenta == "" {
+        print("Ingrese Nº Cuenta: ", terminator: "")
+        cuenta = readLine() ?? ""
+        if cuenta == "" { print("⚠️ El número de cuenta no puede estar vacío.") }
+    }
+    
+    var monto = 0.0
+    var montoValido = false
+    while montoValido == false {
+        print("Ingrese Monto mínimo de apertura: ", terminator: "")
+        let montoTexto = readLine() ?? ""
+        if let montoConvertido = Double(montoTexto), montoConvertido > 0 {
+            monto = montoConvertido
+            montoValido = true
+        } else {
+            print("❌ Monto inválido. Ingrese un número mayor a 0.")
+        }
+    }
+    
+    if opcion == "1" {
+        var nombre = ""
+        while nombre == "" {
+            print("Ingrese Nombre Completo: ", terminator: "")
+            nombre = readLine() ?? ""
+            if nombre == "" { print("⚠️ El nombre no puede estar vacío.") }
+        }
+        
+        var dni = ""
+        while dni == "" {
+            print("Ingrese DNI: ", terminator: "")
+            dni = readLine() ?? ""
+            if dni == "" { print("⚠️ El DNI no puede estar vacío.") }
+        }
+        
+        let nuevoNatural = ClienteNatural(codigo: codigo, direccion: direccion, fechaDeRegistro: fecha, numeroCuenta: cuenta, montoMinimoApertura: monto, nombreCompleto: nombre, dni: dni)
+        listaClientes.append(nuevoNatural)
+        
+    } else {
+        var razonSocial = ""
+        while razonSocial == "" {
+            print("Ingrese Razón Social: ", terminator: "")
+            razonSocial = readLine() ?? ""
+            if razonSocial == "" { print("⚠️ La razón social no puede estar vacía.") }
+        }
+        
+        var ruc = ""
+        while ruc == "" {
+            print("Ingrese RUC: ", terminator: "")
+            ruc = readLine() ?? ""
+            if ruc == "" { print("⚠️ El RUC no puede estar vacío.") }
+        }
+        
+        var representante = ""
+        while representante == "" {
+            print("Ingrese Representante Legal: ", terminator: "")
+            representante = readLine() ?? ""
+            if representante == "" { print("⚠️ El representante legal no puede estar vacío.") }
+        }
+        
+        let nuevoJuridico = ClienteJuridico(codigo: codigo, direccion: direccion, fechaDeRegistro: fecha, numeroCuenta: cuenta, montoMinimoApertura: monto, razonSocial: razonSocial, ruc: ruc, representanteLegal: representante)
+        listaClientes.append(nuevoJuridico)
+    }
+    
+    print("\n¿Desea registrar otro cliente? (s/n): ", terminator: "")
+    let respuesta = readLine() ?? ""
+    if respuesta != "s" && respuesta != "S" {
+        continuar = false
+    }
+}
