@@ -9,6 +9,9 @@ import UIKit
 
 class CulturaTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imagenCultura: UIImageView!
+    @IBOutlet weak var nombreCultura: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
