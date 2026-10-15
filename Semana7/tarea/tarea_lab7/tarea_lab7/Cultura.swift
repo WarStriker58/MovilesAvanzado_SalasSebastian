@@ -13,4 +13,3 @@ class Cultura: NSObject {
         self.foto = foto
     }
 }
-

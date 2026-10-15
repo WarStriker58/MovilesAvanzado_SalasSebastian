@@ -4,10 +4,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     // Arreglo con datos de prueba de Culturas Peruanas
     var listaCulturas: [Cultura] = [
-        Cultura(nombre: "Chavín", region: "Áncash", descripcion: "Cultura preínca conocida por el majestuoso Lanzón Monolítico, el Templo de Chavín de Huántar y sus icónicas Cabezas Clavas talladas en piedra.", foto: UIImage(named: "avatar1")),
-        Cultura(nombre: "Paracas", region: "Ica", descripcion: "Famosa en el mundo entero por su textilería fina y multicolor, sus complejos fardos funerarios y la práctica médica de trepanaciones craneanas.", foto: UIImage(named: "avatar2")),
-        Cultura(nombre: "Moche", region: "La Libertad", descripcion: "Destacados por su altísima calidad alfarera en los huacos retratos, su orfebrería avanzada y el descubrimiento de la tumba real del Señor de Sipán.", foto: UIImage(named: "avatar3")),
-        Cultura(nombre: "Nazca", region: "Ica", descripcion: "Reconocidos mundialmente por sus gigantescas líneas y geoglifos trazados en el desierto, que representan figuras de animales y plantas.", foto: UIImage(named: "avatar4"))
+        Cultura(nombre: "Chavín", region: "Áncash", descripcion: "Cultura preínca conocida por el majestuoso Lanzón Monolítico, el Templo de Chavín de Huántar y sus icónicas Cabezas Clavas talladas en piedra.", foto: UIImage(named: "chavin")),
+        Cultura(nombre: "Paracas", region: "Ica", descripcion: "Famosa en el mundo entero por su textilería fina y multicolor, sus complejos fardos funerarios y la práctica médica de trepanaciones craneanas.", foto: UIImage(named: "paracas")),
+        Cultura(nombre: "Mochica", region: "La Libertad", descripcion: "Destacados por su altísima calidad alfarera en los huacos retratos, su orfebrería avanzada y el descubrimiento de la tumba real del Señor de Sipán.", foto: UIImage(named: "mochica")),
+        Cultura(nombre: "Nazca", region: "Ica", descripcion: "Reconocidos mundialmente por sus gigantescas líneas y geoglifos trazados en el desierto, que representan figuras de animales y plantas.", foto: UIImage(named: "nazca"))
     ]
     
     override func viewDidLoad() {
