@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CDC8F69830A25B21005C3C82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC8F68030A25B1F005C3C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC8F68730A25B1F005C3C82;
+			remoteInfo = apple_lab11_03_SwiftUI_SwiftData_Compras;
+		};
+		CDC8F6A230A25B21005C3C82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC8F68030A25B1F005C3C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC8F68730A25B1F005C3C82;
+			remoteInfo = apple_lab11_03_SwiftUI_SwiftData_Compras;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDC8F68830A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = apple_lab11_03_SwiftUI_SwiftData_Compras.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC8F69730A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = apple_lab11_03_SwiftUI_SwiftData_ComprasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC8F6A130A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = apple_lab11_03_SwiftUI_SwiftData_ComprasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CDC8F68A30A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = apple_lab11_03_SwiftUI_SwiftData_Compras;
+			sourceTree = "<group>";
+		};
+		CDC8F69A30A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = apple_lab11_03_SwiftUI_SwiftData_ComprasTests;
+			sourceTree = "<group>";
+		};
+		CDC8F6A430A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = apple_lab11_03_SwiftUI_SwiftData_ComprasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDC8F68530A25B1F005C3C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC8F69430A25B21005C3C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC8F69E30A25B21005C3C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDC8F67F30A25B1F005C3C82 = {
+			isa = PBXGroup;
+			children = (
+				CDC8F68A30A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras */,
+				CDC8F69A30A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests */,
+				CDC8F6A430A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests */,
+				CDC8F68930A25B1F005C3C82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDC8F68930A25B1F005C3C82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8F68830A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras.app */,
+				CDC8F69730A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests.xctest */,
+				CDC8F6A130A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDC8F68730A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC8F6AB30A25B21005C3C82 /* Build configuration list for PBXNativeTarget "apple_lab11_03_SwiftUI_SwiftData_Compras" */;
+			buildPhases = (
+				CDC8F68430A25B1F005C3C82 /* Sources */,
+				CDC8F68530A25B1F005C3C82 /* Frameworks */,
+				CDC8F68630A25B1F005C3C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CDC8F68A30A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras */,
+			);
+			name = apple_lab11_03_SwiftUI_SwiftData_Compras;
+			packageProductDependencies = (
+			);
+			productName = apple_lab11_03_SwiftUI_SwiftData_Compras;
+			productReference = CDC8F68830A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDC8F69630A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC8F6AE30A25B21005C3C82 /* Build configuration list for PBXNativeTarget "apple_lab11_03_SwiftUI_SwiftData_ComprasTests" */;
+			buildPhases = (
+				CDC8F69330A25B21005C3C82 /* Sources */,
+				CDC8F69430A25B21005C3C82 /* Frameworks */,
+				CDC8F69530A25B21005C3C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDC8F69930A25B21005C3C82 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDC8F69A30A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests */,
+			);
+			name = apple_lab11_03_SwiftUI_SwiftData_ComprasTests;
+			packageProductDependencies = (
+			);
+			productName = apple_lab11_03_SwiftUI_SwiftData_ComprasTests;
+			productReference = CDC8F69730A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDC8F6A030A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC8F6B130A25B21005C3C82 /* Build configuration list for PBXNativeTarget "apple_lab11_03_SwiftUI_SwiftData_ComprasUITests" */;
+			buildPhases = (
+				CDC8F69D30A25B21005C3C82 /* Sources */,
+				CDC8F69E30A25B21005C3C82 /* Frameworks */,
+				CDC8F69F30A25B21005C3C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDC8F6A330A25B21005C3C82 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDC8F6A430A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests */,
+			);
+			name = apple_lab11_03_SwiftUI_SwiftData_ComprasUITests;
+			packageProductDependencies = (
+			);
+			productName = apple_lab11_03_SwiftUI_SwiftData_ComprasUITests;
+			productReference = CDC8F6A130A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDC8F68030A25B1F005C3C82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					CDC8F68730A25B1F005C3C82 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					CDC8F69630A25B21005C3C82 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = CDC8F68730A25B1F005C3C82;
+					};
+					CDC8F6A030A25B21005C3C82 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = CDC8F68730A25B1F005C3C82;
+					};
+				};
+			};
+			buildConfigurationList = CDC8F68330A25B1F005C3C82 /* Build configuration list for PBXProject "apple_lab11_03_SwiftUI_SwiftData_Compras" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDC8F67F30A25B1F005C3C82;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CDC8F68930A25B1F005C3C82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDC8F68730A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras */,
+				CDC8F69630A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasTests */,
+				CDC8F6A030A25B21005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_ComprasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDC8F68630A25B1F005C3C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC8F69530A25B21005C3C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC8F69F30A25B21005C3C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDC8F68430A25B1F005C3C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC8F69330A25B21005C3C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC8F69D30A25B21005C3C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDC8F69930A25B21005C3C82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC8F68730A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras */;
+			targetProxy = CDC8F69830A25B21005C3C82 /* PBXContainerItemProxy */;
+		};
+		CDC8F6A330A25B21005C3C82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC8F68730A25B1F005C3C82 /* apple_lab11_03_SwiftUI_SwiftData_Compras */;
+			targetProxy = CDC8F6A230A25B21005C3C82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDC8F6A930A25B21005C3C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDC8F6AA30A25B21005C3C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDC8F6AC30A25B21005C3C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Compras;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.tecsup.apple-lab11-03-SwiftUI-SwiftData-Compras";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDC8F6AD30A25B21005C3C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Compras;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.tecsup.apple-lab11-03-SwiftUI-SwiftData-Compras";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDC8F6AF30A25B21005C3C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.tecsup.apple-lab11-03-SwiftUI-SwiftData-ComprasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apple_lab11_03_SwiftUI_SwiftData_Compras.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/apple_lab11_03_SwiftUI_SwiftData_Compras";
+			};
+			name = Debug;
+		};
+		CDC8F6B030A25B21005C3C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.tecsup.apple-lab11-03-SwiftUI-SwiftData-ComprasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apple_lab11_03_SwiftUI_SwiftData_Compras.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/apple_lab11_03_SwiftUI_SwiftData_Compras";
+			};
+			name = Release;
+		};
+		CDC8F6B230A25B21005C3C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.tecsup.apple-lab11-03-SwiftUI-SwiftData-ComprasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = apple_lab11_03_SwiftUI_SwiftData_Compras;
+			};
+			name = Debug;
+		};
+		CDC8F6B330A25B21005C3C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pe.edu.tecsup.apple-lab11-03-SwiftUI-SwiftData-ComprasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = apple_lab11_03_SwiftUI_SwiftData_Compras;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDC8F68330A25B1F005C3C82 /* Build configuration list for PBXProject "apple_lab11_03_SwiftUI_SwiftData_Compras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC8F6A930A25B21005C3C82 /* Debug */,
+				CDC8F6AA30A25B21005C3C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC8F6AB30A25B21005C3C82 /* Build configuration list for PBXNativeTarget "apple_lab11_03_SwiftUI_SwiftData_Compras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC8F6AC30A25B21005C3C82 /* Debug */,
+				CDC8F6AD30A25B21005C3C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC8F6AE30A25B21005C3C82 /* Build configuration list for PBXNativeTarget "apple_lab11_03_SwiftUI_SwiftData_ComprasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC8F6AF30A25B21005C3C82 /* Debug */,
+				CDC8F6B030A25B21005C3C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC8F6B130A25B21005C3C82 /* Build configuration list for PBXNativeTarget "apple_lab11_03_SwiftUI_SwiftData_ComprasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC8F6B230A25B21005C3C82 /* Debug */,
+				CDC8F6B330A25B21005C3C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDC8F68030A25B1F005C3C82 /* Project object */;
+}
