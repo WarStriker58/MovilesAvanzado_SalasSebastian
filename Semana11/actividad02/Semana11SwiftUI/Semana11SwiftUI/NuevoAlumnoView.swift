@@ -46,3 +46,4 @@ struct NuevoAlumnoView: View {
         }
     }
 }
+
